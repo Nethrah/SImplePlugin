@@ -1,54 +1,28 @@
 
 
 <?xml version="1.0" encoding="UTF-8"?>
-
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    
-    id="com.plugin.alert"
-    
-    version="1.0.0">
-    
-    
-    
-    <name>AlertPop</name>
-    
-    <description> To displays an alert popup d</description>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.plugin.encryption"
+      version="0.0.1">
+    <name>encryption</name>
+    <description>To create encrypted keys to encrypt and decrypt messages.</description>
+    <license>MIT</license>
    
-    <author>Nethrah</author>
-    
-    
     <engines>
-        
-        <engine name="cordova" version=">=3.0.0" />
-        
+      <engine name="cordova" version=">=3.0.0" />
     </engines>
-    
-    
-    
-    <js-module src="www/alert.js" name="Alert">
-        
-        <clobbers target="Alert" />
-        
+
+    <js-module src="www/encryption.js" name="encryption">
+        <clobbers target="window.encryption" />
     </js-module>
-    
-    <!-- ios -->
-    
+
     <platform name="ios">
-        
         <config-file target="config.xml" parent="/*">
-            
-            <feature name="Alert">
-                
-                <param name="ios-package" value="Alert" />
-                
+            <feature name="encryption">
+                <param name="ios-package" value="encryption" />
             </feature>
-            
         </config-file>
-        
-        <header-file src="src/ios/Alert.h" />
-        
-        <source-file src="src/ios/Alert.m" />
-        
+        <header-file src="src/ios/encryption.h" />
+        <source-file src="src/ios/encryption.m" />
     </platform>
-    
 </plugin>
