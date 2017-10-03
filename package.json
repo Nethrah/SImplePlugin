@@ -1,16 +1,15 @@
 {
   "name": "cordova-plugin-encrypt",
-  "version":“0.0.1”,
+  "version": "0.0.1",
   "description": "An encrypt implementation for cordova apps in iOS",
-  "author": “Nethrah”,
+  "author": {"name": "Nethrah"},
   "contributors": [
     {"name": "Colin Percival"}
   ],
   "cordova": {
     "id": "cordova-plugin-encrypt",
-    "platforms": 
-      “ios”
-       },
+  "platforms": ["ios"]},
+      
   "keywords": [
     "cordova",
     "security",
