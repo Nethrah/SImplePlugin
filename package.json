@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-encrypt",
-  "version": “0.0.1”,
+  "version":“0.0.1”,
   "description": "An encrypt implementation for cordova apps in iOS",
   "author": “Nethrah”,
   "contributors": [
@@ -8,11 +8,9 @@
   ],
   "cordova": {
     "id": "cordova-plugin-encrypt",
-    "platforms": [
+    "platforms": 
       “ios”
-      
-    ]
-  },
+       },
   "keywords": [
     "cordova",
     "security",
@@ -23,7 +21,7 @@
   "main": "www/securestorage.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crypho/cordova-plugin-scrypt.git"
+    "url": "git+https://github.com/Nethrah/SImplePlugin.git"
   },
   "devDependencies": {
     "cordova-plugin-test-framework": ">=1.0.0"
