@@ -1,6 +1,6 @@
-# ENcrypt plugin for iOS 
+# Encrypt plugin for iOS 
 
-
+Password Encryption uses SHA 256 algorithm. I forked open source code for SHA 256algorithm  and implemented in this cordova Project.
 ### Cordova
 
 The plugin can be installed via the Cordova command line interface:
