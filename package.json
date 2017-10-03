@@ -8,8 +8,6 @@
   "cordova": {
     "id": "cordova-plugin-encrypt",
   "platforms": ["ios"]},
-      
-      
   "keywords": [
     "cordova",
     "security",
@@ -17,7 +15,6 @@
     "cordova-ios",
     "cordova-browser"
   ],
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nethrah/SImplePlugin.git"
