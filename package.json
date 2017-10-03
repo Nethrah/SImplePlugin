@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-encrypt",
+  "name": "encryptPlugin",
   "version": "0.0.1",
   "description": "An encrypt implementation for cordova apps in iOS",
   "author": {"name": "Nethrah"},
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Nethrah/cordova-plugin-encrypt/issues"
+    "url": "https://github.com/Nethrah/SImplePlugin/issues"
   },
-  "homepage": "https://github.com/Nethrah/cordova-plugin-encrypt#readme"
+  "homepage": "https://github.com/Nethrah/SImplePlugin#readme"
 }
