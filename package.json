@@ -1,27 +1,28 @@
 {
   "name": "encryptPlugin",
   "version": "0.0.1",
-  "description": "An encrypt implementation for cordova apps in iOS",
-  "author": {"name": "Nethrah"},
-  "contributors": [
-    {"name": "Colin Percival"}
-  ],
+  "description": "\n        An encrypt implementation for cordova apps in iOS.",
   "cordova": {
-    "id": "cordova-plugin-encrypt",
-  "platforms": ["ios"]},
-      
-  "keywords": [
-    "cordova",
-    "security",
-    "encryption",
-    "cordova-ios",
-    "cordova-browser"
-  ],
-
+    "id": "com-plugin-encrypt",
+    "platforms": [
+      "ios"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nethrah/SImplePlugin.git"
   },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Nethrah",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Nethrah/SImplePlugin/issues"
