@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-encrypt",
-  "version":"0.0.1",
+  "version": "0.0.1",
   "description": "An encrypt implementation for cordova apps in iOS",
   "contributors": [
     {"name": "Colin Percival"}

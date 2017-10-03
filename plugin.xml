@@ -21,8 +21,8 @@
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="ScryptPlugin">
-                <param name="ios-package" value="ScryptPlugin"/>
+            <feature name="encryptPlugin">
+                <param name="ios-package" value="encryptPlugin"/>
             </feature>
         </config-file>
         <source-file src="src/encryptPlugin.m" />
@@ -46,5 +46,8 @@
         <source-file src="src/sha256.c" target-dir="src"/>
         <source-file src="src/slowequals.c" target-dir="src"/>
     </platform>
+    
+    
+    
 
    </plugin>
