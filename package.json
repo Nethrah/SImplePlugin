@@ -18,7 +18,7 @@
     "cordova-ios",
     "cordova-browser"
   ],
-  "main": "www/securestorage.js",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nethrah/SImplePlugin.git"
