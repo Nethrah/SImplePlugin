@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"id="cordova-plugin-encrypt"
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-encrypt"
     version=“0.0.1”>
-
     <name>encryptPlugin</name>
     <author>Nethrah</author>
-
     <description>
         An encrypt implementation for cordova apps in iOS.
     <license>MIT</license>
-
-    
     <js-module src="www/encrypt.js" name=“encrypt">
         <clobbers target=“encrypt" />
     </js-module>
@@ -34,8 +30,7 @@
         <header-file src="src/sha256.h" target-dir="src"/>
         <header-file src="src/slowequals.h" target-dir="src"/>
         <header-file src="src/sysendian.h" target-dir=“src”/>
-        <header-file src="src/android.h" target-dir="src"/>
-
+        <header-file src="src/android.h" target-dir="src"/>\
         <source-file src="src/b64.c" target-dir="src"/>
         <source-file src="src/crypto-mcf.c" target-dir="src"/>
         <source-file src="src/crypto_scrypt-check.c" target-dir="src"/>
