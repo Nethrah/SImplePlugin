@@ -1,28 +1,50 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.plugin.encryption"
-      version="0.0.1">
-    <name>encryption</name>
-    <description>To create encrypted keys to encrypt and decrypt messages.</description>
-    <license>MIT</license>
-   
-    <engines>
-      <engine name="cordova" version=">=3.0.0" />
-    </engines>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"id="cordova-plugin-encrypt"
+    version=“0.0.1”>
 
-    <js-module src="www/encryption.js" name="encryption">
-        <clobbers target="window.encryption" />
+    <name>encryptPlugin</name>
+    <author>Nethrah</author>
+
+    <description>
+        An encrypt implementation for cordova apps in iOS.
+    <license>MIT</license>
+
+    
+    <js-module src="www/encrypt.js" name=“encrypt">
+        <clobbers target=“encrypt" />
     </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="encryption">
-                <param name="ios-package" value="encryption" />
+            <feature name="ScryptPlugin">
+                <param name="ios-package" value="ScryptPlugin"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/encryption.h" />
-        <source-file src="src/ios/encryption.m" />
+        <source-file src="src/encryptPlugin.m" />
+        <header-file src="src/encryptPlugin.h" />
+
+        <header-file src="src/crypto_scrypt-hexconvert.h" target-dir="src"/>
+        <header-file src="src/libscrypt.h" target-dir="src"/>
+        <header-file src="src/b64.h" target-dir="src"/>
+        <header-file src="src/sha256.h" target-dir="src"/>
+        <header-file src="src/slowequals.h" target-dir="src"/>
+        <header-file src="src/sysendian.h" target-dir=“src”/>
+        <header-file src="src/android.h" target-dir="src"/>
+
+        <source-file src="src/b64.c" target-dir="src"/>
+        <source-file src="src/crypto-mcf.c" target-dir="src"/>
+        <source-file src="src/crypto_scrypt-check.c" target-dir="src"/>
+        <source-file src="src/crypto_scrypt-hash.c" target-dir="src"/>
+        <source-file src="src/crypto_scrypt-hexconvert.c" target-dir="src"/>
+        <source-file src="src/crypto_scrypt-nosse.c" target-dir="src"/>
+        <source-file src="src/crypto-scrypt-saltgen.c" target-dir="src"/>
+        <source-file src="src/sha256.c" target-dir="src"/>
+        <source-file src="src/slowequals.c" target-dir="src"/>
     </platform>
-</plugin>
+
+   </plugin>
